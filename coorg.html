@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coorg Travel Guide - Sahara Travel</title>
+    <link rel="stylesheet" href="coorg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="coorg-page">
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Sahara Travel</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="web.html">Home</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#nearby">Nearby Places</a></li>
+                <li><a href="#accommodation">Accommodation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="coorg-hero">
+        <div class="hero-content">
+            <h1>Welcome to Coorg</h1>
+            <p>Discover the Scotland of India</p>
+            <a href="#attractions" class="explore-btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="weather" class="tirupati-section coorg-weather">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Weather Information</h2>
+            </div>
+            <div class="weather-container">
+                <div class="weather-card">
+                    <div id="current-weather">
+                        <div class="weather-icon">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                        <div class="weather-info">
+                            <h3>Current Weather</h3>
+                            <p class="temperature">Loading...</p>
+                            <p class="description">Please wait...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-card">
+                    <div id="forecast">
+                        <h3>3-Day Forecast</h3>
+                        <div class="forecast-container">
+                            Loading forecast...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="attractions" class="tirupati-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Popular Attractions</h2>
+            </div>
+            <div class="temple-grid">
+                <div class="temple-card">
+                    <img src="https://coorgtourism.co.in/images/places-to-visit/headers/abbey-falls-coorg-tourism-entry-fee-timings-holidays-reviews-header-v2.jpg" alt="Abbey Falls">
+                    <div class="temple-content">
+                        <h3>Abbey Falls</h3>
+                        <div class="temple-info">
+                            <span><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                            <span><i class="fas fa-ticket-alt"></i> Entry: ₹20</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 8 km from Madikeri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="temple-card">
+                    <img src="data:image/jpeg;base64,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" alt="Talacauvery">
+                    <div class="temple-content">
+                        <h3>Talacauvery Temple</h3>
+                        <div class="temple-info">
+                            <span><i class="fas fa-clock"></i> 6:00 AM - 8:00 PM</span>
+                            <span><i class="fas fa-om"></i> Special Pujas Available</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 45 km from Madikeri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="temple-card">
+                    <img src="https://www.dubareelephantcamp.com/images/gallery1.jpg" alt="Dubare Elephant Camp">
+                    <div class="temple-content">
+                        <h3>Dubare Elephant Camp</h3>
+                        <div class="temple-info">
+                            <span><i class="fas fa-clock"></i> 8:30 AM - 4:00 PM</span>
+                            <span><i class="fas fa-ticket-alt"></i> Entry: ₹100</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 30 km from Madikeri</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nearby" class="nearby-locations">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Nearby Attractions</h2>
+            </div>
+            <div class="location-grid">
+                <div class="location-card">
+                    <h3>Abbey Falls</h3>
+                    <p>A stunning waterfall nestled in the midst of coffee and spice plantations.</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.274346392799!2d75.71721231482074!3d12.226899991351744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5b005c4018c7f%3A0x5f66e11d4ba80880!2sAbbey%20Falls!5e0!3m2!1sen!2sin!4v1651182348291!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <h3>Talacauvery Temple</h3>
+                    <p>The sacred source of the River Cauvery, with a beautiful temple complex.</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.8963183144883!2d75.48436231482027!3d12.183430991378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5b44925c1049d%3A0x3a2c5e8c3c0c6c9a!2sTalacauvery%20Temple!5e0!3m2!1sen!2sin!4v1651182348291!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <h3>Dubare Elephant Camp</h3>
+                    <p>Experience close encounters with elephants in their natural habitat.</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.0963183144883!2d75.89436231482027!3d12.323430991378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5a2c4e8c0c6c9%3A0x3a2c5e8c3c0c6c9a!2sDubare%20Elephant%20Camp!5e0!3m2!1sen!2sin!4v1651182348291!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <h3>Raja's Seat</h3>
+                    <p>A scenic viewpoint offering panoramic views of the valley and sunset.</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.4963183144883!2d75.73436231482027!3d12.423430991378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5a2c4e8c0c6c9%3A0x3a2c5e8c3c0c6c9a!2sRaja&#39;s%20Seat!5e0!3m2!1sen!2sin!4v1651182348291!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <h3>Mandalpatti View Point</h3>
+                    <p>A trekking destination offering breathtaking views of the Western Ghats.</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.6963183144883!2d75.68436231482027!3d12.353430991378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5a2c4e8c0c6c9%3A0x3a2c5e8c3c0c6c9a!2sMandalpatti%20View%20Point!5e0!3m2!1sen!2sin!4v1651182348291!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <h3>Golden Temple (Namdroling Monastery)</h3>
+                    <p>The largest teaching center of the Nyingma lineage of Tibetan Buddhism in the world.</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.8963183144883!2d76.19436231482027!3d12.423430991378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5a2c4e8c0c6c9%3A0x3a2c5e8c3c0c6c9a!2sGolden%20Temple%20Coorg!5e0!3m2!1sen!2sin!4v1651182348291!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accommodation" class="tirupati-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Where to Stay</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-hotel"></i> Luxury Resorts</h3>
+                    <ul class="info-list">
+                        <li>Taj Madikeri Resort & Spa</li>
+                        <li>Evolve Back, Coorg</li>
+                        <li>The Tamara Coorg</li>
+                        <li>Club Mahindra Madikeri</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-home"></i> Homestays</h3>
+                    <ul class="info-list">
+                        <li>Heritage Coffee Estate Stay</li>
+                        <li>Coorg Coffee Camp</li>
+                        <li>Green Valley Estate</li>
+                        <li>Palace Estate Homestay</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-bed"></i> Budget Hotels</h3>
+                    <ul class="info-list">
+                        <li>Hotel Coorg International</li>
+                        <li>Hotel Mayura Valley View</li>
+                        <li>Hotel Hill Town</li>
+                        <li>Capitol Village Resort</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="tirupati-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+            </div>
+            <div class="detail-card contact-info">
+                <h4>Sahara Travel Services - Coorg Branch</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Stuart Hill, Madikeri, Coorg - 571201</p>
+                <p><i class="fas fa-phone"></i> Contact: +91-XXX-XXXXXXX</p>
+                <p><i class="fas fa-clock"></i> Working Hours: 9:00 AM to 6:00 PM (All days)</p>
+                <p><i class="fas fa-info-circle"></i> Services:</p>
+                <ul>
+                    <li>Tour Packages</li>
+                    <li>Accommodation Booking</li>
+                    <li>Transport Services</li>
+                    <li>Adventure Activity Booking</li>
+                    <li>24/7 Tourist Support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Sahara Travel</h3>
+                <p>Your trusted companion for exploring the most beautiful destinations in India.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#nearby">Nearby Places</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sahara Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Weather API Integration
+        $(document).ready(function() {
+            const API_KEY = 'YOUR_API_KEY'; // Replace with actual OpenWeatherMap API key
+            const CITY = 'Madikeri'; // Main city in Coorg
+            
+            // Current Weather
+            $.get(https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric, function(data) {
+                $('#current-weather').html(`
+                    <div class="weather-icon">
+                        <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">
+                    </div>
+                    <div class="weather-info">
+                        <h3>Current Weather</h3>
+                        <p class="temperature">${Math.round(data.main.temp)}°C</p>
+                        <p class="description">${data.weather[0].description}</p>
+                        <p class="humidity">Humidity: ${data.main.humidity}%</p>
+                    </div>
+                `);
+            });
+
+            // 3-Day Forecast
+            $.get(https://api.openweathermap.org/data/2.5/forecast?q=${CITY}&appid=${API_KEY}&units=metric, function(data) {
+                let forecastHtml = '<div class="forecast-days">';
+                for(let i = 0; i < data.list.length; i += 8) {
+                    const day = new Date(data.list[i].dt * 1000);
+                    forecastHtml += `
+                        <div class="forecast-day">
+                            <h4>${day.toLocaleDateString('en-US', {weekday: 'short'})}</h4>
+                            <img src="http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" alt="Weather icon">
+                            <p>${Math.round(data.list[i].main.temp)}°C</p>
+                            <p>${data.list[i].weather[0].description}</p>
+                        </div>
+                    `;
+                }
+                forecastHtml += '</div>';
+                $('.forecast-container').html(forecastHtml);
+            });
+        });
+    </script>
+</body>
+</html>

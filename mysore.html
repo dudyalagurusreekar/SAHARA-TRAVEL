@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysore Travel Guide</title>
+    <link rel="stylesheet" href="mysore-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Sahara Travel</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="web.html">Home</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#healthcare">Healthcare</a></li>
+                <li><a href="#police">Police Stations</a></li>
+                <li><a href="#office">Office Areas</a></li>
+                <li><a href="#tourist">Tourist Places</a></li>
+                <li><a href="#temples">Temples</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tirupati-hero">
+        <div class="tirupati-hero-content">
+            <h1>Welcome to Mysore</h1>
+            <p>Discover the cultural capital of Karnataka</p>
+            <a href="#tourist" class="book-darshan">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="weather" class="tirupati-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Weather Information</h2>
+            </div>
+            <div class="weather-container">
+                <div class="weather-card">
+                    <div id="current-weather">
+                        <div class="weather-icon">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                        <div class="weather-info">
+                            <h3>Current Weather</h3>
+                            <p class="temperature">Loading...</p>
+                            <p class="description">Please wait...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-card">
+                    <div id="forecast">
+                        <h3>3-Day Forecast</h3>
+                        <div class="forecast-container">
+                            Loading forecast...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="healthcare" class="guides">
+        <h2>Healthcare Facilities</h2>
+        <div class="guides-container">
+            <div class="guide-card">
+                <i class="fas fa-hospital"></i>
+                <h3>Apollo Hospital</h3>
+                <p>KRS Road, Mysore</p>
+                <p>24/7 Emergency Services</p>
+                <p>Phone: 0821-2345678</p>
+            </div>
+            <div class="guide-card">
+                <i class="fas fa-ambulance"></i>
+                <h3>JSS Hospital</h3>
+                <p>MG Road, Mysore</p>
+                <p>Multi-specialty Hospital</p>
+                <p>Phone: 0821-2345679</p>
+            </div>
+            <div class="guide-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Krishna Rajendra Hospital</h3>
+                <p>Sayyaji Rao Road</p>
+                <p>Government Hospital</p>
+                <p>Phone: 0821-2345680</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="police" class="tips">
+        <h2>Police Stations</h2>
+        <div class="tips-container">
+            <div class="tip">
+                <h3>Devaraja Police Station</h3>
+                <p>Location: Devaraja Market Area</p>
+                <p>Phone: 0821-2418111</p>
+            </div>
+            <div class="tip">
+                <h3>Krishnaraja Police Station</h3>
+                <p>Location: KR Circle</p>
+                <p>Phone: 0821-2418112</p>
+            </div>
+            <div class="tip">
+                <h3>Nazarbad Police Station</h3>
+                <p>Location: Nazarbad Main Road</p>
+                <p>Phone: 0821-2418113</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="office" class="destinations">
+        <h2>Business Districts & Office Areas</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="https://www.gopalanenterprises.com/images/commercial-upongoing-epark.jpg" alt="Office Area">
+                <div class="card-content">
+                    <h3>IT Park</h3>
+                    <p>Mysore's technology hub with multiple IT companies</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Mysore_Palace_-_Amba_Vilas_Palace.jpg" alt="Business District">
+                <div class="card-content">
+                    <h3>Central Business District</h3>
+                    <p>Located around D. Devaraja Urs Road</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tourist" class="destinations">
+        <h2>Tourist Attractions</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgMLybkAAHu0B1E5835heWhD4v6yjTa7_WHg&s" alt="Mysore Palace">
+                <div class="card-content">
+                    <h3>Mysore Palace</h3>
+                    <p>The iconic palace of Mysore, illuminated with thousands of lights</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXZrzM27Rlc_n26t290RA94ZrkSkjE_zkkQ&s" alt="Brindavan Gardens">
+                <div class="card-content">
+                    <h3>Brindavan Gardens</h3>
+                    <p>Beautiful terraced gardens with musical fountains</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20250102-775098451-1735812694.jpg" alt="Mysore Zoo">
+                <div class="card-content">
+                    <h3>Mysore Zoo</h3>
+                    <p>One of the oldest and most popular zoos in India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="temples" class="destinations">
+        <h2>Famous Temples</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2024/03/Chamundeshwari-Temple-Mysore-Karnataka.jpg?fit=1024%2C576&ssl=1" alt="Chamundeshwari Temple">
+                <div class="card-content">
+                    <h3>Chamundeshwari Temple</h3>
+                    <p>Ancient temple atop Chamundi Hills</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.karnataka.com/wp-content/uploads/2013/09/philomenas-church-mysore.jpg" alt="St. Philomena's Church">
+                <div class="card-content">
+                    <h3>St. Philomena's Church</h3>
+                    <p>Neo-Gothic style church, one of the largest in India</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_p6tZKw6HALSmqhv4g4PRA53B26fWnd5A_w&s" alt="Lakshmiramana Swamy Temple">
+                <div class="card-content">
+                    <h3>Lakshmiramana Swamy Temple</h3>
+                    <p>Historic temple in the heart of Mysore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Maps Section -->
+    <section id="maps" class="tirupati-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Location & Directions</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Getting Here</h3>
+                    <ul class="info-list">
+                        <li>Located in Karnataka, South India</li>
+                        <li>140 km from Bangalore</li>
+                        <li>165 km from Coimbatore</li>
+                        <li>180 km from Ooty</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-clock"></i> Best Time to Visit</h3>
+                    <ul class="info-list">
+                        <li>October to February (Winter)</li>
+                        <li>Pleasant temperature: 20-30°C</li>
+                        <li>Dasara Festival (September/October)</li>
+                        <li>Less crowded on weekdays</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-info-circle"></i> Travel Tips</h3>
+                    <ul class="info-list">
+                        <li>Book Palace tickets in advance</li>
+                        <li>Visit Zoo in morning hours</li>
+                        <li>Evening visit to Brindavan Gardens</li>
+                        <li>Local transport readily available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125323.47685815545!2d76.57891673903457!3d12.311827930592461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70381d572ef9%3A0x2b89ece8c0f8396d!2sMysuru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1645000000000!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-route"></i> Major Attractions</h3>
+                    <div class="temple-info">
+                        <span><i class="fas fa-palace"></i> Mysore Palace: 0 km (City Center)</span>
+                        <span><i class="fas fa-mountain"></i> Chamundi Hills: 3 km</span>
+                        <span><i class="fas fa-tree"></i> Brindavan Gardens: 12 km</span>
+                        <span><i class="fas fa-church"></i> St. Philomena's Church: 2 km</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-bus"></i> Local Transport</h3>
+                    <div class="temple-info">
+                        <span><i class="fas fa-bus"></i> City Bus Service</span>
+                        <span><i class="fas fa-car"></i> Taxi Services</span>
+                        <span><i class="fas fa-auto-rickshaw"></i> Auto Rickshaws</span>
+                        <span><i class="fas fa-bicycle"></i> Bike Rentals</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-phone"></i> Helpline Numbers</h3>
+                    <div class="temple-info">
+                        <span><i class="fas fa-info-circle"></i> Tourist Help: 1800-425-2355</span>
+                        <span><i class="fas fa-taxi"></i> Taxi Booking: 0821-2444444</span>
+                        <span><i class="fas fa-hospital"></i> Medical Emergency: 108</span>
+                        <span><i class="fas fa-shield-alt"></i> Police Control: 100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Emergency Contacts</h3>
+                <ul>
+                    <li>Police: 100</li>
+                    <li>Ambulance: 108</li>
+                    <li>Fire: 101</li>
+                    <li>Tourist Helpline: 1800-425-2355</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#healthcare">Healthcare</a></li>
+                    <li><a href="#police">Police Stations</a></li>
+                    <li><a href="#tourist">Tourist Places</a></li>
+                    <li><a href="#temples">Temples</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sahara Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Weather API Integration
+        $(document).ready(function() {
+            const API_KEY = 'YOUR_API_KEY'; // Replace with actual OpenWeatherMap API key
+            const CITY = 'Mysore';
+            
+            // Current Weather
+            $.get(`https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric`, function(data) {
+                $('#current-weather').html(`
+                    <div class="weather-icon">
+                        <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">
+                    </div>
+                    <div class="weather-info">
+                        <h3>Current Weather</h3>
+                        <p class="temperature">${Math.round(data.main.temp)}°C</p>
+                        <p class="description">${data.weather[0].description}</p>
+                        <p class="humidity">Humidity: ${data.main.humidity}%</p>
+                    </div>
+                `);
+            });
+
+            // 3-Day Forecast
+            $.get(`https://api.openweathermap.org/data/2.5/forecast?q=${CITY}&appid=${API_KEY}&units=metric`, function(data) {
+                let forecastHtml = '<div class="forecast-days">';
+                for(let i = 0; i < data.list.length; i += 8) {
+                    const day = new Date(data.list[i].dt * 1000);
+                    forecastHtml += `
+                        <div class="forecast-day">
+                            <h4>${day.toLocaleDateString('en-US', {weekday: 'short'})}</h4>
+                            <img src="http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" alt="Weather icon">
+                            <p>${Math.round(data.list[i].main.temp)}°C</p>
+                            <p>${data.list[i].weather[0].description}</p>
+                        </div>
+                    `;
+                }
+                forecastHtml += '</div>';
+                $('.forecast-container').html(forecastHtml);
+            });
+        });
+    </script>
+</body>
+</html>
